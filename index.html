@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuocHDA Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e25a8.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full-time freelancer</p>
+                <h1>Hi, I'm <span>Hoang Dinh Anh Quoc</span><br/> from Vietnam</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a person who can adapt to various different fields.<br/>
+                        <span class="objective">Objective:</span> Looking to work in a fast-paced environment to enhance my management skills.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                    </div>
+                    <!--Skills-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br/>
+                                Creating websites and templates, with databases included.
+                            </li>
+                            <li>
+                                <span>Event Management/Event Planner</span><br/>
+                                Planning and managing events.
+                            </li>
+                            <li>
+                                <span>Office tools</span><br/>
+                                Proficiency in using Google Suite, Microsoft Office and other communication tools (Zoom, Zalo, and Discord).
+                            </li>
+                            <li>
+                                <span>Logic game master</span><br/>
+                                Puzzle game creator and designer.
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>September 2022 - December 2022</span><br/>
+                                Back-end developer at <a href="https://fptsoftware.com/">FPT Software</a>
+                            </li>
+                            <li>
+                                <span>December 2020 - now</span><br/>
+                                Member at <a href="https://www.facebook.com/cocsaigonfuhcm">CocSaiGon Communication Club</a>
+                            </li>
+                            <li>
+                                <span>December 2020 - April 2023</span><br/>
+                                Member at <a href="https://www.facebook.com/FPTEventClub">FPT Event Club</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Education-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>September 2020 - Now</span><br/>
+                                Major: Software engineering - FPT University, Ho Chi Minh city, Vietnam
+                            </li>
+                            <li>
+                                <span>2017 - 2020</span><br/>
+                                Gia Dinh high school, Ho Chi Minh city, Vietnam
+                            </li>
+                            <li>
+                                <span>2013 - 2017</span><br/>
+                                Tran Van On secondary school, Ho Chi Minh city, Vietnam
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Achievement-->
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li>
+                                <span>December 19th 2020 & January 16th 2021</span><br/>
+                                Top 14 best contestants in gameshow Super Brain Vietnam.<br/>
+                                Reference links: <br/>
+                                + Round 1: <a href="https://www.youtube.com/watch?v=2bPMN1ViL5M&t=2461s">Watch here</a><br/>
+                                + Round 2: <a href="https://www.youtube.com/watch?v=kAayJXwV82k&t=1890s">Watch here</a>
+                            </li>
+                            <li>
+                                <span>March 2022</span><br/>
+                                Top 5 best social activity contributor in Fall 2021 Semester (96/100) - FPT University.
+                            </li>
+                            <li>
+                                <span>September 2020 - December 2022</span><br/>
+                                70% Scholarship of FPT University (~200 million VND).
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Projects-->
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li>
+                                <span>Sample project</span><br/>
+                                Bla bla bla...
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-3"></div>
+                <div class="about-col-4"></div>
+                <div class="about-col-5"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web design</h2>
+                    <p>Some description here</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Event Management</h2>
+                    <p>Some description here</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App design</h2>
+                    <p>Some description here</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
