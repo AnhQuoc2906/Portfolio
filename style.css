@@ -1,3 +1,14 @@
+@keyframes transitionIn {
+    from{
+        opacity:0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity:1;
+        transform: rotateX(0);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,9 +23,32 @@ html{
 body{
     background: #080808;
     color:#fff;
+    animation: transitionIn 0.75s;
 }
 
-.header{
+body .language{
+    display: none;
+}
+
+body .language#vi{
+    display: block;
+}
+
+body .flag{
+    text-align: right;
+    display:block;
+    padding-top: 10px;
+    margin-right: 10%;
+} 
+
+body .flag img{
+    max-width: 40px;
+    cursor: pointer;
+    margin: 20px 10px;
+    position: relative;
+}
+
+.header_en, .header_vi{
     width: 100%;
     height: 100vh;
     background-image: url('images/background.png');
@@ -173,8 +207,8 @@ nav ul li a:hover::after{
 }
 
 .services-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -385,7 +419,7 @@ form .btn2{
     color: #ff004f;
 }
 
-#msg{
+#msg_en, #msg_vi{
     color: #61b752;
     margin-top: -10px;
     display: block;
@@ -397,13 +431,17 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
-    .header{
+    .header_en, .header_vi{
         background-image: url('images/phone_background.png');   
     }
     
     .header-text{
         margin-top: 100%;
         font-size: 16px;
+    }
+
+    .services-list{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     
     .header-text h1{
@@ -427,6 +465,15 @@ nav .fas{
         z-index: 2;
         transition: right 0.5s;
     }
+
+    .work:hover img{
+        transform: scale(1);
+    }
+
+    .layer p{
+        font-size: 12px;
+    }
+
 
     nav ul li{
         display: block;

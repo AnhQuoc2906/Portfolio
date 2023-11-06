@@ -10,230 +10,434 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/22f776ff59.js" crossorigin="anonymous"></script>
 <body>
-    <div class="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Full-time freelancer</p>
-                <h1>Hi, I'm <span>Hoang Dinh Anh Quoc</span><br/> from Vietnam</h1>
-            </div>
-        </div>
+    <div class="flag">
+        <img src="icons/united-states.png" alt="English" onclick="language('en')">
+        <img src="icons/vietnam.png" alt="Vietnamese" onclick="language('vi')">
     </div>
-    <!-- About -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/User.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I am a person who can adapt to various different fields.<br/>
-                        <span class="objective">Objective:</span> Looking to work in a fast-paced environment to enhance my management skills.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
-                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
-                    </div>
-                    <!--Skills-->
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>
-                                <span>Web Development</span><br/>
-                                Creating websites and templates, with databases included.
-                            </li>
-                            <li>
-                                <span>Event Management/Event Planner</span><br/>
-                                Planning and managing events.
-                            </li>
-                            <li>
-                                <span>Office tools</span><br/>
-                                Proficiency in using Google Suite, Microsoft Office and other communication tools (Zoom, Zalo, and Discord).
-                            </li>
-                            <li>
-                                <span>Puzzle game creator</span><br/>
-                                Puzzle game creator and designer.
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Experience-->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li>
-                                <span>September 2022 - December 2022</span><br/>
-                                Back-end developer at <a href="https://fptsoftware.com/">FPT Software</a>
-                            </li>
-                            <li>
-                                <span>December 2020 - now</span><br/>
-                                Member at <a href="https://www.facebook.com/cocsaigonfuhcm">CocSaiGon Communication Club</a>
-                            </li>
-                            <li>
-                                <span>December 2020 - April 2023</span><br/>
-                                Member at <a href="https://www.facebook.com/FPTEventClub">FPT Event Club</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Education-->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <span>September 2020 - Now</span><br/>
-                                Major: Software engineering - FPT University, Ho Chi Minh city, Vietnam
-                            </li>
-                            <li>
-                                <span>2017 - 2020</span><br/>
-                                Gia Dinh high school, Ho Chi Minh city, Vietnam
-                            </li>
-                            <li>
-                                <span>2013 - 2017</span><br/>
-                                Tran Van On secondary school, Ho Chi Minh city, Vietnam
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Achievement-->
-                    <div class="tab-contents" id="achievements">
-                        <ul>
-                            <li>
-                                <span>December 19th 2020 & January 16th 2021</span><br/>
-                                Top 14 best contestants in gameshow Super Brain Vietnam.<br/>
-                                Reference links: <br/>
-                                + Round 1: <a href="https://www.youtube.com/watch?v=2bPMN1ViL5M&t=2461s">Watch here</a><br/>
-                                + Round 2: <a href="https://www.youtube.com/watch?v=kAayJXwV82k&t=1890s">Watch here</a>
-                            </li>
-                            <li>
-                                <span>March 2022</span><br/>
-                                Top 5 best social activity contributor in Fall 2021 Semester (96/100) - FPT University.
-                            </li>
-                            <li>
-                                <span>September 2020 - December 2022</span><br/>
-                                70% Scholarship of FPT University (~200 million VND).
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Projects-->
-                    <div class="tab-contents" id="projects">
-                        <ul>
-                            <li>
-                                <span>Sample project</span><br/>
-                                Bla bla bla...
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-col-3"></div>
-                <div class="about-col-4"></div>
-                <div class="about-col-5"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Services -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fi fi-rr-display-code"></i>
-                    <h2>Web design</h2>
-                    <p>Some description here</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fi fi-rr-calendar-day"></i>
-                    <h2>Event Management</h2>
-                    <p>Some description here</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fi fi-rr-puzzle"></i>
-                    <h2>Game Creator</h2>
-                    <p>Some description here</p>
-                    <a href="#">Learn more</a>
+
+    <div class="language" id="en">
+        <div class="header_en">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header_en">Home</a></li>
+                        <li><a href="#about_en">About</a></li>
+                        <li><a href="#services_en">Services</a></li>
+                        <li><a href="#portfolio_en">Portfolio</a></li>
+                        <li><a href="#contact_en">Contact</a></li>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full-time freelancer</p>
+                    <h1>Hi, I'm <span>Hoang Dinh Anh Quoc</span><br/> from Vietnam</h1>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/Projects/TeamBuilding_CSG_2022.jpg" alt="">
-                    <div class="layer">
-                        <h3>CocSaiGon TeamBuilding 2022</h3>
-                        <p>Position: Leader project<br/>
-                            The project is created for the internal members of the CocSaiGon Communication Club with the aim of relieving stress for nearly 100 club members after more than 1 year of operation and social distancing due to the COVID-19 pandemic. Additionally, the project also aims to strengthen and foster stronger relationships among the club members.</p>
-                        <a href="https://www.facebook.com/cocsaigonfuhcm/posts/pfbid0hKsaRhMKnf5zYNMGEfd5bqms2fSbHWXowsZnQ6aDFpp3G6nrt23n72SCFHMiDQ4Fl?mibextid=zDhOQc"><i class="fi fi-rr-link-alt"></i></a>
+        <div id="about_en">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/User.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a person who can adapt to various different fields.<br/>
+                            <span class="objective">Objective:</span> Looking to work in a fast-paced environment to enhance my management skills.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills_en')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience_en')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education_en')">Education</p>
+                            <p class="tab-links" onclick="opentab('achievements_en')">Achievements</p>
+                        </div>
+                        <!--Skills-->
+                        <div class="tab-contents active-tab" id="skills_en">
+                            <ul>
+                                <li>
+                                    <span>Web Development</span><br/>
+                                    Creating websites and templates, with databases included.
+                                </li>
+                                <li>
+                                    <span>Event Management/Event Planner</span><br/>
+                                    Planning and managing events.
+                                </li>
+                                <li>
+                                    <span>Office tools</span><br/>
+                                    Proficiency in using Google Suite, Microsoft Office and other communication tools (Zoom, Zalo, and Discord).
+                                </li>
+                                <li>
+                                    <span>Puzzle game creator</span><br/>
+                                    Puzzle game creator and designer.
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Experience-->
+                        <div class="tab-contents" id="experience_en">
+                            <ul>
+                                <li>
+                                    <span>September 2022 - December 2022</span><br/>
+                                    Back-end developer at <a href="https://fptsoftware.com/">FPT Software</a>
+                                </li>
+                                <li>
+                                    <span>December 2020 - now</span><br/>
+                                    Member at <a href="https://www.facebook.com/cocsaigonfuhcm">CocSaiGon Communication Club (CSG)</a>:<br/>
+                                    - Former sub-leader of team Event Production.
+                                </li>
+                                <li>
+                                    <span>December 2020 - April 2023</span><br/>
+                                    Member at <a href="https://www.facebook.com/FPTEventClub">FPT Event Club (FEV)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Education-->
+                        <div class="tab-contents" id="education_en">
+                            <ul>
+                                <li>
+                                    <span>September 2020 - Now</span><br/>
+                                    Major: Software engineering - FPT University, Ho Chi Minh city, Vietnam
+                                </li>
+                                <li>
+                                    <span>2017 - 2020</span><br/>
+                                    Gia Dinh high school, Ho Chi Minh city, Vietnam
+                                </li>
+                                <li>
+                                    <span>2013 - 2017</span><br/>
+                                    Tran Van On secondary school, Ho Chi Minh city, Vietnam
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Achievement-->
+                        <div class="tab-contents" id="achievements_en">
+                            <ul>
+                                <li>
+                                    <span>December 19th 2020 & January 16th 2021</span><br/>
+                                    Top 14 best contestants in gameshow Super Brain Vietnam.<br/>
+                                    Reference links: <br/>
+                                    + Round 1: <a href="https://youtu.be/2bPMN1ViL5M?si=h_5RVyYNeelScSQO">Watch here</a><br/>
+                                    + Round 2: <a href="https://youtu.be/kAayJXwV82k?si=CgHgKoTUzBkQTtKc">Watch here</a>
+                                </li>
+                                <li>
+                                    <span>March 2022</span><br/>
+                                    Top 5 best social activity contributor in Fall 2021 Semester (96/100) - FPT University, Ho Chi Minh city.
+                                </li>
+                                <li>
+                                    <span>September 2020 - December 2022</span><br/>
+                                    70% Scholarship of FPT University, Ho Chi Minh city (~200 million VND).
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/Projects/Ra_Khoi_CSG_2022.jpg" alt="">
-                    <div class="layer">
-                        <h3>The Spring-Summer 2022 End-of-Season Review Ceremony</h3>
-                        <p>
-                            Position: Leader project<br/>
-                            The ceremony is established to honor the efforts and contributions of the members of the CocSaiGon Communication Club. Additionally, it aims to provide motivation for both individual members and the club as a whole to continue creating more successful events and products in the future.
+            </div>
+        </div>
+        <div id="services_en">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fi fi-rr-display-code"></i>
+                        <h2>Web design</h2>
+                        <p>Some description here</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fi fi-rr-calendar-day"></i>
+                        <h2>Event Management</h2>
+                        <p>Some description here</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fi fi-rr-puzzle"></i>
+                        <h2>Game Creator</h2>
+                        <p>Some description here</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio_en">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Projects/TeamBuilding_CSG_2022.jpg" alt="">
+                        <div class="layer">
+                            <h3>CocSaiGon TeamBuilding 2022</h3>
+                            <p>Position: Leader project<br/>
+                                The project is created for the internal members of the CocSaiGon Communication Club with the aim of relieving stress for nearly 100 club members after more than 1 year of operation and social distancing due to the COVID-19 pandemic. Additionally, the project also aims to strengthen and foster stronger relationships among the club members.</p>
+                            <a href="https://www.facebook.com/cocsaigonfuhcm/posts/pfbid0hKsaRhMKnf5zYNMGEfd5bqms2fSbHWXowsZnQ6aDFpp3G6nrt23n72SCFHMiDQ4Fl?mibextid=zDhOQc"><i class="fi fi-rr-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Projects/Ra_Khoi_CSG_2022.jpg" alt="">
+                        <div class="layer">
+                            <h3>The Spring-Summer 2022 End-of-Season Review Ceremony</h3>
+                            <p>
+                                Position: Leader project<br/>
+                                The ceremony is established to honor the efforts and contributions of the members of the CocSaiGon Communication Club. Additionally, it aims to provide motivation for both individual members and the club as a whole to continue creating more successful events and products in the future.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Projects/FPTU_Merch_2023.jpg" alt="">
+                        <div class="layer">
+                            <h3>FPTU Merch 2023</h3>
+                            <p>
+                                Position: Back-end developer & Database manager<br/>
+                                The project is established to help students studying at FPT University create their first impressions at the university through project products, which include FPTYOU T-shirts, lanyards, socks, and distinctive FPT badges.
+                            </p>
+                            <a href="https://fptumerch.shop/"><i class="fi fi-rr-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+        <div id="contact_en">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                         <h1 class="sub-title">Contact Me</h1>
+                         <p><i class="fa-regular fa-paper-plane"></i>anhquoc2906@gmail.com</p>
+                         <p><i class="fa-solid fa-phone"></i>+84 983 941 396</p>
+                         <div class="social-icons">
+                            <a href="https://www.facebook.com/Aquoc.2k2"><i class="fa-brands fa-facebook-f"></i>
+                            <a href="https://www.instagram.com/_quocanh_2906_/"><i class="fa-brands fa-instagram"></i>
+                         </div>
+                         <a href="documents/CV_TECHNICAL FRESHER_HOANG DINH ANH QUOC.pdf.pdf" download class="btn btn2">My CV here</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet-en">
+                            <input type="text" name="Timestamp" id="timestamp_en" hidden>
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                            <input type="text" name="Status" value="Pending" hidden>
+                            <button type="submit" class="btn btn2" onclick="sendContact('en')">Submit</button>
+                        </form>
+                        <span id="msg_en"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright <i class="fa-solid fa-copyright"></i>: Hoàng Đình Anh Quốc
+        </div>
+    </div>
+    <div class="language" id="vi">
+        <div class="header_vi">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header_vi">Trang chủ</a></li>
+                        <li><a href="#about_vi">Về bản thân</a></li>
+                        <li><a href="#services_vi">Dịch vụ</a></li>
+                        <li><a href="#portfolio_vi">Portfolio</a></li>
+                        <li><a href="#contact_vi">Liên hệ</a></li>
+                        <i class="fas fa-times" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Full-time freelancer</p>
+                    <h1>Xin chào, mình là <span>Anh Quốc</span><br/> đến từ Việt Nam</h1>
+                </div>
+            </div>
+        </div>
+        <div id="about_vi">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/User.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Về bản thân</h1>
+                        <p>Mình là 1 người có thể thích ứng với nhiều lĩnh vực khác nhau trong 1 dự án.<br/>
+                        <span class="objective">Mục tiêu:</span> Có thể phát triển và làm việc trong môi trường có tốc độ thay đổi nhanh chóng, thông qua đó phát triển những kỹ năng cá nhân..</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills_vn')">Kỹ năng</p>
+                            <p class="tab-links" onclick="opentab('experience_vn')">Kinh nghiệm</p>
+                            <p class="tab-links" onclick="opentab('education_vn')">Học vấn</p>
+                            <p class="tab-links" onclick="opentab('achievements_vn')">Thành tích</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills_vn">
+                            <ul>
+                                <li>
+                                    <span>Thiết kế websites</span><br/>
+                                    Tạo websites và các templates, kèm với các databases nếu cần thiết.
+                                </li>
+                                <li>
+                                    <span>Quản lý/ dựng kế hoạch cho sự kiện</span><br/>
+                                    Xây dựng và quản lý các kế hoạch cho sự kiện tuỳ theo mức độ được yêu cầu.
+                                </li>
+                                <li>
+                                    <span>Sử dụng thành thạo công cụ làm việc online</span><br/>
+                                    Sử dụng thành thạo các ứng dụng như Google Suite, Microsoft Office và nhiều kênh đàm thoại khác (Zoom, Zalo, and Discord).
+                                </li>
+                                <li>
+                                    <span>Game Master</span><br/>
+                                    Thiết kế và người sản xuất các trò chơi trí tuệ trên truyền hình và trên các nền tảng chính thống.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience_vn">
+                            <ul>
+                                <li>
+                                    <span>Tháng 9/2022 - Tháng 12/2022</span><br/>
+                                    Back-end developer tại <a href="https://fptsoftware.com/">FPT Software</a>.
+                                </li>
+                                <li>
+                                    <span>Tháng 12/2020 - Hiện tại</span><br/>
+                                    Thành viên tại <a href="https://www.facebook.com/cocsaigonfuhcm">Câu lạc bộ truyền thông Cóc Sài Gòn</a>:<br/>
+                                    - Cựu sub-leader team Event Production (sản xuất sự kiện).
+                                </li>
+                                <li>
+                                    <span>Tháng 12/2020 - Tháng 4/2023</span><br/>
+                                    Thành viên tại <a href="https://www.facebook.com/FPTEventClub"> Câu lạc bộ tổ chức sự kiện trường đại học FPT (FEV)</a>.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education_vn">
+                            <ul>
+                                <li>
+                                    <span>Tháng 9/2020 - Now</span><br/>
+                                    Chuyên ngành: Kỹ thuật phần mềm - Trường đại học FPT, thành phố Hồ Chí Minh, Việt Nam.
+                                </li>
+                                <li>
+                                    <span>Tháng 9/2017 - Tháng 6/2020</span><br/>
+                                    Trường trung học phổ thông Gia Định, thành phố Hồ Chí Minh, Việt Nam.
+                                </li>
+                                <li>
+                                    <span>Tháng 9/2013 - Tháng 6/2017</span><br/>
+                                    Trường trung học cơ sở Trần Văn Ơn, thành phố Hồ Chí Minh, Việt Nam.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements_vn">
+                            <ul>
+                                <li>
+                                    <span>19 tháng 12 năm 2020 & 16 tháng 1 năm 2021</span><br/>
+                                    Top 14 thí sinh xuất sắc nhất của chương trình Siêu Trí Tuệ Việt Nam.<br/>
+                                    Đường dẫn tham khảo: <br/>
+                                    + Vòng 1: <a href="https://youtu.be/2bPMN1ViL5M?si=h_5RVyYNeelScSQO">Xem tại đây</a><br/>
+                                    + Vòng 2: <a href="https://youtu.be/kAayJXwV82k?si=CgHgKoTUzBkQTtKc">Xem tại đây</a>
+                                </li>
+                                <li>
+                                    <span>Tháng 3/2022</span><br/>
+                                    Top 5 sinh viên hoạt động phong trào xuất sắc kỳ Fall năm 2021 (Điểm hoạt động: 96/100) - Đại học FPT, thành phố Hồ Chí Minh.
+                                </li>
+                                <li>
+                                    <span>Tháng 9/2020 - Tháng 12/2022</span><br/>
+                                    Học bổng 70% tại đại học FPT, thành phố Hồ Chí Minh (~200 triệu đồng).
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services_vi">
+            <div class="container">
+                <h1 class="sub-title">Về dịch vụ</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fi fi-rr-display-code"></i>
+                        <h2>Thiết kế web</h2>
+                        <p>- Xây dựng websites theo yêu cầu khách hàng đề ra.
                         </p>
+                        <a href="#contact_vi">Đặt dịch vụ tại đây</a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/Projects/FPTU_Merch_2023.jpg" alt="">
-                    <div class="layer">
-                        <h3>FPTU Merch 2023</h3>
-                        <p>
-                            Position: Back-end developer & Database manager<br/>
-                            The project is established to help students studying at FPT University create their first impressions at the university through project products, which include FPTYOU T-shirts, lanyards, socks, and distinctive FPT badges.
+                    <div>
+                        <i class="fi fi-rr-calendar-day"></i>
+                        <h2>Event/ sự kiện</h2>
+                        <p>- Xây dựng kế hoạch cho sự kiện theo yêu cầu bên cung ứng đề ra. <br/>
+                           - Hỗ trợ quá trình lên ý tưởng cho dự án.<br/>
+                           - Hiện thực hoá ý tưởng do bên khách hàng cung cấp.
                         </p>
-                        <a href="https://fptumerch.shop/"><i class="fi fi-rr-link-alt"></i></a>
+                        <a href="#contact_vi">Đặt dịch vụ tại đây</a>
+                    </div>
+                    <div>
+                        <i class="fi fi-rr-puzzle"></i>
+                        <h2>Game Creator</h2>
+                        <p>- Xây dựng trò chơi ở nhiều thể loại (Puzzle, Adventure, etc.) và hình thức (Boardgame, trò chơi tập thể, etc.). <br/>
+                            - Hỗ trợ quá trình lên ý tưởng/cốt truyện và luật chơi cho các trò chơi do khách hàng yêu cầu.
+                         </p>
+                         <a href="#contact_vi">Đặt dịch vụ tại đây</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
-    </div>
-    <!-- Contact -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                     <h1 class="sub-title">Contact Me</h1>
-                     <p><i class="fa-regular fa-paper-plane"></i>anhquoc2906@gmail.com</p>
-                     <p><i class="fa-solid fa-phone"></i>+84 983 941 396</p>
-                     <div class="social-icons">
-                        <a href="https://www.facebook.com/Aquoc.2k2"><i class="fa-brands fa-facebook-f"></i>
-                        <a href="https://www.instagram.com/_quocanh_2906_/"><i class="fa-brands fa-instagram"></i>
-                     </div>
-                     <a href="documents/CV_TECHNICAL FRESHER_HOANG DINH ANH QUOC.pdf.pdf" download class="btn btn2">My CV here</a>
+        <div id="portfolio_vi">
+            <div class="container">
+                <h1 class="sub-title">Dự án đã thực hiện</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/Projects/TeamBuilding_CSG_2022.jpg" alt="">
+                        <div class="layer">
+                            <h3>Team Building 2022 (câu lạc bộ truyền thông Cóc Sài Gòn - đại học FPT Tp.HCM)</h3>
+                            <p>Vai trò: Trưởng dự án<br/><br/>
+                                Dự án được thành lập cho các thành viên trong câu lạc bộ truyền thông Cóc Sài Gòn thuộc đại học FPT Tp.HCM. Với mong muốn có thể giảm toả căng thẳng cho gần 100 thành viên sau hơn 1 năm giãn cách xã hội vì dịch bệnh COVID-19. Bên cạnh đó duy trì và gắn kết mối quan hệ giữa các thành viên trong nội bộ câu lạc bộ với nhau.
+                            </p>                                
+                            <a href="https://www.facebook.com/cocsaigonfuhcm/posts/pfbid0hKsaRhMKnf5zYNMGEfd5bqms2fSbHWXowsZnQ6aDFpp3G6nrt23n72SCFHMiDQ4Fl?mibextid=zDhOQc"><i class="fi fi-rr-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Projects/Ra_Khoi_CSG_2022.jpg" alt="">
+                        <div class="layer">
+                            <h3>Lễ tổng kết kỳ Spring-Summer 2022 (câu lạc bộ truyền thông Cóc Sài Gòn - đại học FPT Tp.HCM)</h3>
+                            <p>Vai trò: Trưởng dự án<br/><br/>
+                                Buổi lễ nhằm tôn vinh những đóng góp và cống hiến của thành viên cho câu lạc bộ trong 2 kỳ học vừa qua. Bên cạnh đó nhằm tạo động lực cho từng cá nhân và tập thể câu lạc bộ để tiếp tục tạo ra nhiều sự kiện và sản phẩm chất lượng cao trong tương lai.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Projects/FPTU_Merch_2023.jpg" alt="">
+                        <div class="layer">
+                            <h3>FPTU Merch 2023</h3>
+                            <p>
+                                Vai trò: Back-end developer & Database manager<br/><br/>
+                                Dự án tạo ra nhằm giúp sinh viên theo học tại đại học FPT có những ấn tượng đầu tiên tại trường thông qua các ấn phẩm của dự án, bao gồm áo thun FPTYOU, dây đeo (lanyards), vớ và huy hiệu đậm chất FPT.
+                            </p>
+                            <a href="https://fptumerch.shop/"><i class="fi fi-rr-link-alt"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Timestamp" id="timestamp" hidden>
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <input type="text" name="Status" value="Pending" hidden>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+            </div>
+            <a href="#" class="btn">Xem thêm</a>
+        </div>
+        <div id="contact_vi">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                         <h1 class="sub-title">Liên hệ</h1>
+                         <p><i class="fa-regular fa-paper-plane"></i>anhquoc2906@gmail.com</p>
+                         <p><i class="fa-solid fa-phone"></i>+84 983 941 396</p>
+                         <div class="social-icons">
+                            <a href="https://www.facebook.com/Aquoc.2k2"><i class="fa-brands fa-facebook-f"></i>
+                            <a href="https://www.instagram.com/_quocanh_2906_/"><i class="fa-brands fa-instagram"></i>
+                         </div>
+                         <a href="documents/CV_TECHNICAL FRESHER_HOANG DINH ANH QUOC.pdf.pdf" download class="btn btn2">CV của mình</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet-vi">
+                            <input type="text" name="Timestamp" id="timestamp_vi" hidden>
+                            <input type="text" name="Name" placeholder="Tên" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <textarea name="Message" rows="6" placeholder="Tin nhắn bạn muốn gửi"></textarea>
+                            <input type="text" name="Status" value="Pending" hidden>
+                            <button type="submit" class="btn btn2" onclick="sendContact('vi')">Gửi</button>
+                        </form>
+                        <span id="msg_vi"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        Copyright <i class="fa-solid fa-copyright"></i>: Hoàng Đình Anh Quốc
+        <div class="copyright">
+            Copyright <i class="fa-solid fa-copyright"></i>: Hoàng Đình Anh Quốc
+        </div>
     </div>
     <script src="script.js"></script>
     <script src="contact.js"></script>
