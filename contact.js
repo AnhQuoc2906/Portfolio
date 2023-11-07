@@ -10,7 +10,7 @@ function sendContact(lang){
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    msg_en.innerHTML = "Message sent successfully";
+                    msg_en.innerHTML = "Message sent successfully, I'll contact you as soon as possible.";
                     setTimeout(function(){
                         msg_en.innerHTML = ""
                     }, 5000);
@@ -28,7 +28,7 @@ function sendContact(lang){
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
-                    msg_vi.innerHTML = "Message sent successfully";
+                    msg_vi.innerHTML = "Đã gửi tin nhắn thành công, mình sẽ liên hệ lại bạn trong thời gian sớm nhất nhé.";
                     setTimeout(function(){
                         msg_vi.innerHTML = ""
                     }, 5000);

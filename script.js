@@ -1,6 +1,7 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-var sideMenu = document.getElementById('sideMenu');
+var sideMenuEn = document.getElementById('sideMenu_en');
+var sideMenuVi = document.getElementById('sideMenu_vi');
 var languageAll = document.getElementsByClassName('language');
 
 //Set timestamp
@@ -19,12 +20,20 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-function openMenu(){
-    sideMenu.style.right = "0";
+function openMenu(lang){
+    if(lang === 'en'){
+        sideMenuEn.style.right = "0";
+    } else if(lang === 'vi'){
+        sideMenuVi.style.right = "0";
+    }
 }
 
-function closeMenu(){
-    sideMenu.style.right = "-200px";
+function closeMenu(lang){
+    if(lang === 'en'){
+        sideMenuEn.style.right = "-200px";
+    } else if(lang === 'vi'){
+        sideMenuVi.style.right = "-200px";    
+    }
 }
 
 function language(lang) {
